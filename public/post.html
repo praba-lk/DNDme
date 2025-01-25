@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Feeds</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            padding: 1rem;
+            background-color: #1f1f1f;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .card.pastel-1 {
+            background-color: #ffebcd;
+        }
+
+        .card.pastel-2 {
+            background-color: #e6e6fa;
+        }
+
+        .card.pastel-3 {
+            background-color: #d5f5e3;
+        }
+
+        .card.pastel-4 {
+            background-color: #f9ebea;
+        }
+
+        .card.pastel-5 {
+            background-color: #fef9e7;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            background-color: #1f1f1f;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Post Feeds</h1>
+    </header>
+
+    <div class="container">
+        <div class="card pastel-1">
+            <iframe src="about:blank" title="Post 1"></iframe>
+            <div class="card-content">
+                <h2 class="card-title">Tech Trends 2025</h2>
+                <p class="card-description">Explore the latest advancements in technology shaping our future. Dive into emerging technologies such as AI, quantum computing, and smart cities, and how they influence daily life and industries globally.</p>
+            </div>
+        </div>
+
+        <div class="card pastel-2">
+            <iframe src="about:blank" title="Post 2"></iframe>
+            <div class="card-content">
+                <h2 class="card-title">Sustainable Living</h2>
+                <p class="card-description">Learn how small changes can lead to a more eco-friendly lifestyle. Discover practices like waste reduction, energy conservation, and sustainable resource management for a greener future.</p>
+            </div>
+        </div>
+
+        <div class="card pastel-3">
+            <iframe src="about:blank" title="Post 3"></iframe>
+            <div class="card-content">
+                <h2 class="card-title">The Art of Mindfulness</h2>
+                <p class="card-description">Discover techniques to improve your focus and reduce stress. Embrace practices like meditation, mindful breathing, and gratitude journaling to foster a balanced and fulfilling life.</p>
+            </div>
+        </div>
+
+        <div class="card pastel-4">
+            <iframe src="about:blank" title="Post 4"></iframe>
+            <div class="card-content">
+                <h2 class="card-title">Space Exploration</h2>
+                <p class="card-description">A look at humanity's journey to the stars and beyond. From the Apollo missions to Mars exploration, understand the milestones and future possibilities of interstellar travel.</p>
+            </div>
+        </div>
+
+        <div class="card pastel-5">
+            <div class="card-content">
+                <h2 class="card-title">Creative Writing Tips</h2>
+                <p class="card-description">Enhance your storytelling skills with these practical tips. Learn the nuances of character building, plot structuring, and crafting immersive narratives for readers.</p>
+            </div>
+        </div>
+
+        <div class="card pastel-1">
+            <div class="card-content">
+                <h2 class="card-title">Fitness for Everyone</h2>
+                <p class="card-description">Achieve your fitness goals with simple and effective strategies. Explore diverse workout routines, nutritional plans, and motivational hacks to maintain a healthy lifestyle.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Post Feeds. All rights reserved. <a href="home.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
